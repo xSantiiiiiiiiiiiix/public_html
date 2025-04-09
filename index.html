@@ -128,12 +128,17 @@
         document.addEventListener('DOMContentLoaded', () => {
             const nav = document.querySelector('nav');
             let lastScrollY = window.scrollY;
-
+            
+            //eliminar barra flotante en pantallas chicas
             window.addEventListener('scroll', () => {
-                if (window.scrollY > lastScrollY && window.scrollY > nav.offsetHeight) {
-                    nav.classList.add('floating');
+                if (window.innerWidth > 768) { 
+                    if (window.scrollY > lastScrollY && window.scrollY > nav.offsetHeight) {
+                        nav.classList.add('floating');
+                    } else {
+                        nav.classList.remove('floating');
+                    }
                 } else {
-                    nav.classList.remove('floating');
+                    nav.classList.remove('floating'); 
                 }
                 lastScrollY = window.scrollY;
             });

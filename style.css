@@ -22,22 +22,22 @@
         }
 
     nav {
-        position: static; /* Deja de ser flotante */
+        position: static; 
         display: flex;
-        flex-wrap: wrap; /* Permite que los elementos ocupen más de un renglón */
+        flex-wrap: wrap; 
         padding: 0.5rem;
     }
 
         nav ul {
             display: flex;
-            flex-wrap: wrap; /* Ajusta los elementos en múltiples renglones si es necesario */
-            justify-content: center; /* Centra los elementos */
+            flex-wrap: wrap; 
+            justify-content: center; 
             gap: 0.5rem;
             width: 100%;
         }
 
             nav ul li {
-                flex: 1 1 auto; /* Permite que los elementos se distribuyan uniformemente */
+                flex: 1 1 auto; 
                 text-align: center;
             }
 
@@ -59,13 +59,6 @@
         padding: 1rem;
     }
 
-    /* Mejorar el formulario para móviles */
-    form input[type="text"],
-    form textarea {
-        width: 100%;
-    }
-
-    /* Reducir el tamaño del botón de WhatsApp */
     .whatsapp-float {
         padding: 12px;
         font-size: 20px;
@@ -188,7 +181,6 @@ section {
     gap: 1rem;
 }
 
-/* Alinear el texto a la izquierda en las tarjetas */
 .card {
     background: white;
     border: 1px solid #e5e7eb;
@@ -241,7 +233,6 @@ footer {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo actualizado para la sección "¿Qué hacemos?" */
 #catalogo {
     background-color: #f0f4f8;
     padding: 1.5rem;
